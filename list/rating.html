@@ -20,8 +20,8 @@
     .search-bar{margin-bottom:1.5rem}
     input#search{padding:.6rem;width:100%;max-width:320px;background:var(--card);border:1px solid var(--grey);color:var(--text);border-radius:4px}
     .rating-grid{display:grid;gap:1rem}
-    .rating-card{background:var(--card);padding:1.5rem;border-radius:6px;display:flex;align-items:center;gap:1.5rem;transition:.3s}
-    .rating-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(201,38,50,.25)}
+    a.rating-card{background:var(--card);padding:1.5rem;border-radius:6px;display:flex;align-items:center;gap:1.5rem;transition:.3s;text-decoration:none;color:inherit}
+    a.rating-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(201,38,50,.25)}
     .rank{font-size:1.5rem;font-weight:800;color:var(--accent);min-width:40px}
     img.avatar{width:60px;height:60px;border-radius:50%;object-fit:cover}
     .info{flex:1}
@@ -35,7 +35,12 @@
   <header>
     <div class="container flex">
       <a href="../index.html" class="logo">GOODMAN FORBS</a>
-      <nav><a href="../index.html">Главная</a><a href="../news/world-news.html">Новости</a><a href="about.html">О нас</a>
+      <nav>
+        <a href="../index.html">Главная</a>
+        <a href="../news/world-news.html">Новости</a>
+        <a href="../industries.html">Отделы</a>
+        <a href="../about.html">О нас</a>
+      </nav>
     </div>
   </header>
 
@@ -44,27 +49,41 @@
     <div class="search-bar"><input type="text" id="search" placeholder="Поиск по имени..."></div>
 
     <div class="rating-grid" id="ratingBody">
-      <div class="rating-card"><div class="rank">1</div><img src="../img/kupitman.jpg" class="avatar">
+      <a href="bio-kupitman.html" target="_blank" class="rating-card">
+        <div class="rank">1</div><img src="../img/kupitman.jpg" class="avatar">
         <div class="info"><div class="name">Натан Купитман</div><div class="role">Генеральный директор, Goodman-MedTech</div></div>
-        <div class="aura">9 870 ед.</div></div>
-      <div class="rating-card"><div class="rank">2</div><img src="../img/goodman.jpg" class="avatar">
+        <div class="aura">9 870 ед.</div>
+      </a>
+
+      <a href="bio-goodman.html" target="_blank" class="rating-card">
+        <div class="rank">2</div><img src="../img/goodman.jpg" class="avatar">
         <div class="info"><div class="name">Алан Гудман</div><div class="role">Председатель правления, Goodman Industries</div></div>
-        <div class="aura">9 540 ед.</div></div>
-           <div class="rating-card"><div class="rank">3</div><img src="../img/gurevich.jpg" class="avatar">
+        <div class="aura">9 540 ед.</div>
+      </a>
+
+      <a href="bio-zhadam.html" target="_blank" class="rating-card">
+        <div class="rank">3</div><img src="../img/zhadam.jpg" class="avatar">
+        <div class="info"><div class="name">Максим Жадам</div><div class="role">Технический директор, Goodman-Robotics</div></div>
+        <div class="aura">9 210 ед.</div>
+      </a>
+
+      <a href="bio-gurevich.html" target="_blank" class="rating-card">
+        <div class="rank">4</div><img src="../img/gurevich.jpg" class="avatar">
         <div class="info"><div class="name">Антон Гуревич</div><div class="role">Начальник программы C4ISR, Goodman-Defence</div></div>
-        <div class="aura">9 350 ед.</div></div>
- <div class="rating-card"><div class="rank">4</div><img src="../img/zhadam.jpg" class="avatar">
-        <div class="info"><div class="name">Максим Жадан</div><div class="role">Технический директор, Goodman-Robotics</div></div>
-        <div class="aura">9 210 ед.</div></div>
-<div class="rating-card"><div class="rank">5</div><img src="../img/cringe.jpg" class="avatar">
-        <div class="info"><div class="name">Мистер Кринж</div><div class="role">Главный Гуманитарий , Goodman-Industries</div></div>
-        <div class="aura">9000 ед.</div></div>
-      <div class="rating-card"><div class="rank">6</div><img src="../img/vesna.jpg" class="avatar">
+        <div class="aura">8 930 ед.</div>
+      </a>
+
+      <a href="bio-vesna.html" target="_blank" class="rating-card">
+        <div class="rank">5</div><img src="../img/vesna.jpg" class="avatar">
         <div class="info"><div class="name">Марк Весна</div><div class="role">Руководитель направления, Goodman-Cyber</div></div>
-        <div class="aura">8 710 ед.</div></div>
-      <div class="rating-card"><div class="rank">7</div><img src="../img/yukhnovsky.jpg" class="avatar">
-        <div class="info"><div class="name">Никита Юхновский</div><div class="role">Менеджер по уборке отходов, Goodman-Materials</div></div>
-        <div class="aura">-8 450 ед.</div></div>
+        <div class="aura">8 710 ед.</div>
+      </a>
+
+      <a href="bio-yukhnovsky.html" target="_blank" class="rating-card">
+        <div class="rank">6</div><img src="../img/yukhnovsky.jpg" class="avatar">
+        <div class="info"><div class="name">Никита Юхновский</div><div class="role">Главный инженер, Goodman-Materials</div></div>
+        <div class="aura">8 450 ед.</div>
+      </a>
     </div>
   </main>
 
