@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Рейтинг по аурe – Goodman Forbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#c92632;--bg:#0a0a0a;--card:#111;--text:#fff;--grey:#888}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:auto;padding:0 1rem}
+    .flex{display:flex;justify-content:space-between;align-items:center}
+    header{background:var(--card);padding:1.2rem 0}
+    .logo{font-size:1.6rem;font-weight:800;letter-spacing:1px}
+    nav a{margin-left:1.5rem;font-weight:600}
+    main{padding:4rem 0}
+    h2{margin-bottom:1rem;font-weight:800;font-size:2rem}
+    .search-bar{margin-bottom:1.5rem}
+    input#search{padding:.6rem;width:100%;max-width:320px;background:var(--card);border:1px solid var(--grey);color:var(--text);border-radius:4px}
+    .rating-grid{display:grid;gap:1rem}
+    .rating-card{background:var(--card);padding:1.5rem;border-radius:6px;display:flex;align-items:center;gap:1.5rem;transition:.3s}
+    .rating-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(201,38,50,.25)}
+    .rank{font-size:1.5rem;font-weight:800;color:var(--accent);min-width:40px}
+    img.avatar{width:60px;height:60px;border-radius:50%;object-fit:cover}
+    .info{flex:1}
+    .name{font-size:1.1rem;font-weight:600}
+    .role{font-size:.9rem;color:var(--grey)}
+    .aura{font-size:1.25rem;font-weight:700;color:var(--accent)}
+    footer{text-align:center;padding:2.5rem 0;background:var(--card);font-size:.85rem;color:var(--grey)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <a href="../index.html" class="logo">GOODMAN FORBS</a>
+      <nav><a href="../index.html">Главная</a><a href="../news/world-news.html">Новости</a><a href="../industries.html">Отделы</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Рейтинг лидеров по уровню ауры</h2>
+    <div class="search-bar"><input type="text" id="search" placeholder="Поиск по имени..."></div>
+
+    <div class="rating-grid" id="ratingBody">
+      <div class="rating-card"><div class="rank">1</div><img src="../img/kupitman.jpg" class="avatar">
+        <div class="info"><div class="name">Натан Купитман</div><div class="role">Генеральный директор, Goodman-MedTech</div></div>
+        <div class="aura">9 870 ед.</div></div>
+      <div class="rating-card"><div class="rank">2</div><img src="../img/goodman.jpg" class="avatar">
+        <div class="info"><div class="name">Алан Гудман</div><div class="role">Председатель правления, Goodman Industries</div></div>
+        <div class="aura">9 540 ед.</div></div>
+           <div class="rating-card"><div class="rank">3</div><img src="../img/gurevich.jpg" class="avatar">
+        <div class="info"><div class="name">Антон Гуревич</div><div class="role">Начальник программы C4ISR, Goodman-Defence</div></div>
+        <div class="aura">9 350 ед.</div></div>
+ <div class="rating-card"><div class="rank">4</div><img src="../img/zhadam.jpg" class="avatar">
+        <div class="info"><div class="name">Максим Жадам</div><div class="role">Технический директор, Goodman-Robotics</div></div>
+        <div class="aura">9 210 ед.</div></div>
+      <div class="rating-card"><div class="rank">5</div><img src="../img/vesna.jpg" class="avatar">
+        <div class="info"><div class="name">Марк Весна</div><div class="role">Руководитель направления, Goodman-Cyber</div></div>
+        <div class="aura">8 710 ед.</div></div>
+      <div class="rating-card"><div class="rank">6</div><img src="../img/yukhnovsky.jpg" class="avatar">
+        <div class="info"><div class="name">Никита Юхновский</div><div class="role">Главный инженер, Goodman-Materials</div></div>
+        <div class="aura">8 450 ед.</div></div>
+    </div>
+  </main>
+
+  <footer>© 2026 Goodman Forbs</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

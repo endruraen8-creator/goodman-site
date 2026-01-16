@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Новости – Goodman Forbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#c92632;--bg:#0a0a0a;--card:#111;--text:#fff;--grey:#888}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:auto;padding:0 1rem}
+    .flex{display:flex;justify-content:space-between;align-items:center}
+    header{background:var(--card);padding:1.2rem 0}
+    .logo{font-size:1.6rem;font-weight:800;letter-spacing:1px}
+    nav a{margin-left:1.5rem;font-weight:600}
+    main{padding:4rem 0}
+    h2{margin-bottom:1.5rem;font-weight:800;font-size:2rem}
+    .slider{margin-bottom:3rem}
+    .slide{display:none;padding:2rem;background:var(--card);border-left:4px solid var(--accent)}
+    .slide.active{display:block}
+    .news-list article{padding:1.5rem 0;border-bottom:1px solid var(--grey)}
+    .news-list h4{margin-bottom:.5rem}
+    footer{text-align:center;padding:2.5rem 0;background:var(--card);font-size:.85rem;color:var(--grey)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <a href="../index.html" class="logo">GOODMAN FORBS</a>
+            <nav><a href="../index.html">Главная</a><a href="../list/rating.html">Рейтинг</a><a href="../industries.html">Отделы</a></nav></div>
+  </header>
+
+  <main class="container">
+    <h2>Мировые новости</h2>
+
+    <div class="slider">
+      <div class="slide active">
+        <h3>Goodman Industries представила ИВЛ 5-го поколения</h3>
+        <p>На выставке Medica 2026 подразделение Goodman-MedTech показало аппарат ИВЛ, синхронизированный с биополем пациента.</p>
+      </div>
+      <div class="slide">
+        <h3>Алан Гудман: «Мы делаем роботов, которые чувствуют ауру оператора»</h3>
+        <p>В интервью Forbes председатель Goodman Industries раскрыл стратегию развития направления Goodman-Robotics.</p>
+      </div>
+      <div class="slide">
+        <h3>Купитман возглавил рейтинг «30 под 30» в категории энергетика</h3>
+        <p>Журнал Forbes включил Натана Купитмана в список самых перспективных предпринимателей.</p>
+      </div>
+    </div>
+
+    <div class="news-list">
+      <article><h4>Goodman-Defence получила контракт Пентагона на C4ISR</h4><p>Контракт на $410 млн предусматривает поставку систем управления и защиты периметра, интегрированных с ПВО-ПЭП.</p><small>13 января 2026</small></article>
+      <article><h4>Goodman-Cyber запустила квантовый чип «Аура-К»</h4><p>Криптографический модуль обеспечивает защиту данных на уровне личного биополя пользователя.</p><small>10 января 2026</small></article>
+      <article><h4>Максим Жадам представил «Ауромобиль» на CES 2026</h4><p>Концепт-кар, заряжаемый энергетикой водителя, собрал рекордное число предзаказов.</p><small>07 января 2026</small></article>
+      <article><h4>Goodman-Materials создала композит для гиперзвука</h4><p>Новый материал выдерживает 2 000 °C и делает корпус ракеты вдвое легче.</p><small>05 января 2026</small></article>
+      <article><h4>Антон Гуревич вошёл в топ-100 инженеров мира по версии IEEE</h4><p>Награда присуждена за разработку системы C4ISR с адаптивной аурой сети.</p><small>28 декабря 2025</small></article>
+      <article><h4>Goodman-MedTech запустила клинические испытания «аурической» КТ</h4><p>Аппарат выявляет опухоли на ранней стадии по изменению аурического поля пациента.</p><small>20 декабря 2025</small></article>
+      <article><h4>Никита Юхновский получил грант ЕС на €50 млн</h4><p>Средства пойдут на создание ультралёгких композитов для «зелёной» авиации.</p><small>15 декабря 2025</small></article>
+      <article><h4>Goodman-Robotics открыла завод в Саудовской Аравии</h4><p>Производственная линия выпускает 10 000 SCARA-роботов в год, управляемых аурой оператора.</p><small>10 декабря 2025</small></article>
+      <article><h4>Марк Весна стал спикером Davos 2026</h4><p>Тема выступления: «Квантовая криптография биополя: новая эра приватности».</p><small>05 декабря 2025</small></article>
+      <article><h4>Goodman Industries вошла в список «50 самых инновационных компаний мира»</h4><p>Рейтинг составлен журналом Fast Company по итогам 2025 года.</p><small>01 декабря 2025</small></article>
+    </div>
+  </main>
+
+  <footer>© 2026 Goodman Forbs</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

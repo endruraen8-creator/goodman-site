@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Отделы – Goodman Forbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#c92632;--bg:#0a0a0a;--card:#111;--text:#fff;--grey:#888}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:auto;padding:0 1rem}
+    .flex{display:flex;justify-content:space-between;align-items:center}
+    header{background:var(--card);padding:1.2rem 0}
+    .logo{font-size:1.6rem;font-weight:800;letter-spacing:1px}
+    nav a{margin-left:1.5rem;font-weight:600}
+    main{padding:4rem 0}
+    h1{margin-bottom:.5rem;font-weight:800;font-size:2.2rem}
+    .lead{margin-bottom:3rem;color:var(--grey)}
+    .grid-5{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+    .ind-card{background:var(--card);padding:2rem;border-left:4px solid var(--accent);border-radius:4px;transition:.3s}
+    .ind-card h3{font-size:1.25rem;font-weight:600;margin-bottom:.6rem;color:var(--accent)}
+    .ind-card:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(201,38,50,.25)}
+    .num{font-size:2rem;font-weight:800;color:var(--accent);display:block;margin-top:1rem}
+    footer{text-align:center;padding:2.5rem 0;background:var(--card);font-size:.85rem;color:var(--grey)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <a href="index.html" class="logo">GOODMAN FORBS</a>
+      <nav><a href="index.html">Главная</a><a href="list/rating.html">Рейтинг</a><a href="news/world-news.html">Новости</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Отделы Goodman Industries</h1>
+    <p class="lead">Инженерные решения будущего — сегодня.</p>
+
+    <div class="grid-5">
+      <div class="ind-card">
+        <h3>Goodman-Robotics</h3>
+        <p>AMR / SCARA / PLC-контроллеры. Роботы, которые «слышат» биополе оператора.</p>
+        <span class="num">10 000+</span> единиц техники в эксплуатации
+      </div>
+      <div class="ind-card">
+        <h3>Goodman-MedTech</h3>
+        <p>ИВЛ, хирургические комплексы, КТ-сканеры нового поколения.</p>
+        <span class="num">500+</span> больниц оснащено нашим оборудованием
+      </div>
+      <div class="ind-card">
+        <h3>Goodman-Defence</h3>
+        <p>C4ISR, ПВО-ПЭП, системы защиты периметра и критической инфраструктуры.</p>
+        <span class="num">$410 млн</span> контракт Пентагона на C4ISR
+      </div>
+      <div class="ind-card">
+        <h3>Goodman-Cyber</h3>
+        <p>Криптография, квантовые ключи, защита данных на уровне ауры пользователя.</p>
+        <span class="num">99,999 %</span> защищённость каналов
+      </div>
+      <div class="ind-card">
+        <h3>Goodman-Materials</h3>
+        <p>Ультралёгкие композиты для авиации, космоса и глубоководных аппаратов.</p>
+        <span class="num">-18 %</span> массы конструкций наших клиентов
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Goodman Industries</footer>
+</body>
+</html>
