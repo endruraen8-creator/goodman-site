@@ -26,8 +26,17 @@
     .back{margin-top:2rem;display:inline-block;color:var(--glitch);transition:.3s}
     .back:hover{color:var(--text)}
     footer{background:var(--surface);padding:1rem;text-align:center;font-size:.75rem;color:#555}
-    .type{overflow:hidden;white-space:nowrap;width:0;animation:type 2s steps(90,end) forwards}
-    @keyframes type{to{width:100%}}
+    /* перенос длинных слов */
+    .type, .quote{word-break:break-word;overflow-wrap:break-word}
+    /* плавное появление вместо «печати» */
+    .type{opacity:0;animation:fadeIn .8s ease-out forwards}
+    .type:nth-child(2){animation-delay:.1s}
+    .type:nth-child(3){animation-delay:.2s}
+    .type:nth-child(4){animation-delay:.3s}
+    .type:nth-child(5){animation-delay:.4s}
+    .quote{animation-delay:.6s}
+    a.back{animation-delay:.8s}
+    @keyframes fadeIn{to{opacity:1}}
   </style>
 </head>
 <body>
@@ -41,25 +50,26 @@
   <main>
     <div class="container">
       <div class="photo">
-  <img src="../img/kupitman-dossier.jpg" alt="Натан Купитман">
-</div>
+        <img src="../img/kupitman-dossier.jpg" alt="Натан Купитман">
+      </div>
+
       <div class="data">
         <h1><span class="glitch">ДОСЬЕ</span> // Натан Купитман <span class="cursor"></span></h1>
 
         <p class="type"><span class="label">ID:</span> K-01 <span class="label">АУРА:</span> 9870 ед.</p>
-        <p class="type" style="animation-delay:.3s"><span class="label">Должность:</span> Генеральный директор Goodman-MedTech, Министр Внутренних Дел Израиля.</p>
-        <p class="type" style="animation-delay:.6s"><span class="label">Год рождения:</span> 1985 <span class="label">Образование:</span> Университет по изготавлению смаженок имени Гудмана примудрого</p>
+        <p class="type"><span class="label">Должность:</span> Генеральный директор Goodman-MedTech, Министр Внутренних Дел Израиля</p>
+        <p class="type"><span class="label">Год рождения:</span> 1985 <span class="label">Образование:</span> Университет по изготавлению смаженок имени Гудмана примудрого</p>
 
-        <p class="type" style="animation-delay:.9s"><span class="label">Ключевые достижения:</span></p>
-        <ul class="type" style="animation-delay:1.2s;list-style:square;padding-left:1.5rem">
+        <p class="type"><span class="label">Ключевые достижения:</span></p>
+        <ul class="type">
           <li>Создатель первого ИВЛ, синхронизированного с биополем пациента</li>
           <li>42 патента в области медицинской техники</li>
           <li>Forbes «30 под 30» (энергетика)</li>
         </ul>
 
-        <div class="quote type" style="animation-delay:1.8s">«Я не рождён, чтобы бояться. Я рождён сокрушать преграды на пути к вечной славе.»</div>
+        <div class="quote type">«Я не рождён, чтобы бояться. Я рождён сокрушать преграды на пути к вечной славе.»</div>
 
-        <a href="rating.html" class="back type" style="animation-delay:2.2s">[ЗАКРЫТЬ ДОСЬЕ]</a>
+        <a href="rating.html" class="back type">[ЗАКРЫТЬ ДОСЬЕ]</a>
       </div>
     </div>
   </main>
