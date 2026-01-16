@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>О нас – Goodman Forbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#c92632;--bg:#0a0a0a;--card:#111;--text:#fff;--grey:#888}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:auto;padding:0 1rem}
+    .flex{display:flex;justify-content:space-between;align-items:center}
+    header{background:var(--card);padding:1.2rem 0;position:sticky;top:0;z-index:10}
+    .logo{font-size:1.6rem;font-weight:800;letter-spacing:1px}
+    nav a{margin-left:1.5rem;font-weight:600;transition:.3s}
+    nav a:hover{color:var(--accent)}
+    main{padding:4rem 0}
+    h1{margin-bottom:1rem;font-weight:800;font-size:2.5rem}
+    h2{margin:2rem 0 1rem;font-weight:700;font-size:1.8rem;color:var(--accent)}
+    .lead{font-size:1.1rem;color:var(--grey);margin-bottom:2rem}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:2rem 0}
+    .card{background:var(--card);padding:2rem;border-left:4px solid var(--accent);border-radius:6px;transition:.3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(201,38,50,.25)}
+    .card h3{font-size:1.25rem;font-weight:700;margin-bottom:.6rem}
+    .num{font-size:2rem;font-weight:800;color:var(--accent);display:block;margin-top:1rem}
+    .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}
+    .person{background:var(--card);padding:1.5rem;border-radius:6px;text-align:center}
+    .person strong{display:block;margin-bottom:.3rem}
+    footer{text-align:center;padding:2.5rem 0;background:var(--card);font-size:.85rem;color:var(--grey)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <a href="index.html" class="logo">GOODMAN FORBS</a>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="list/rating.html">Рейтинг</a>
+        <a href="news/world-news.html">Новости</a>
+        <a href="industries.html">Отделы</a>
+        <a href="about.html">О нас</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>О Goodman Industries</h1>
+    <p class="lead">«Инженерные решения будущего — сегодня»</p>
+
+    <p>Мы создаём технологии, которые формируют новую реальность. Goodman Industries — холдинг, объединяющий пять специализированных подразделений, каждое из которых отвечает за свой фронтир науки и производства. С 2010-х годов компания выросла из небольшой исследовательской лаборатории до вертикально-интегрированной группы с 500+ инженерами и собственными заводами в Европе и Азии. Сегодня наши решения работают в 42 странах: от операционных залов клиник до космодромов и подводных лабораторий.</p>
+
+    <h2>Отделы и направления</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Goodman-Robotics</h3>
+        <p>Промышленная автоматизация и робототехника нового поколения: AMR/SCARA-манипуляторы, контроллеры и «слышащие» роботы с интегрированной системой машинного зрения. Максимизируем точность и безопасность производства, снижая TCO клиентов до 18 %.</p>
+        <span class="num">10 000+</span> единиц техники в эксплуатации
+      </div>
+      <div class="card">
+        <h3>Goodman-MedTech</h3>
+        <p>Медицинские комплексы и КТ-сканеры для высокоточной диагностики. 10 000+ больничных отделений оснащены нашим оборудованием; 99,999 % надёжности подтверждено 10-летним контрактом обслуживания с крупнейшими частными клиниками ЕС.</p>
+        <span class="num">500+</span> больниц партнёров
+      </div>
+      <div class="card">
+        <h3>Goodman-Defence</h3>
+        <p>Системы C4ISR, противодронная защита и периметральные решения для критической инфраструктуры. Контракт Пентагона на поставку защищённых каналов связи и инновации в сегменте ПВО-ПЗРК делают мир безопаснее.</p>
+        <span class="num">$410 млн</span> контракт Пентагона
+      </div>
+      <div class="card">
+        <h3>Goodman-Cyber</h3>
+        <p>Квантовая криптография, защита данных на уровне биополей оператора и программно-аппаратные скремблеры. Разрабатываем устойчивые к квантовым вычислениям алгоритмы шифрования для частного и государственного секторов.</p>
+        <span class="num">99,999 %</span> защищённость каналов
+      </div>
+      <div class="card">
+        <h3>Goodman-Materials</h3>
+        <p>Ультралёгкие композиты для авиации, космоса и глубоководных аппаратов. Наши материалы уменьшают массу конструкций заказчиков на 18 % без потери прочности, продлевая срок службы и сокращая энергозатраты.</p>
+        <span class="num">-18 %</span> массы конструкций
+      </div>
+    </div>
+
+    <h2>Ключевые фигуры</h2>
+    <div class="team">
+      <div class="person"><strong>Натан Купитман</strong><span>Генеральный директор холдинга</span></div>
+      <div class="person"><strong>Алан Гудман</strong><span>Председатель совета директоров</span></div>
+      <div class="person"><strong>Антон Гуревич</strong><span>Руководитель Goodman-Defence</span></div>
+      <div class="person"><strong>Максим Жадам</strong><span>Технический директор Goodman-Robotics</span></div>
+      <div class="person"><strong>Марк Весна</strong><span>Руководитель Goodman-Cyber</span></div>
+      <div class="person"><strong>Никита Юхновский</strong><span>Главный инженер Goodman-Materials</span></div>
+    </div>
+
+    <h2>Миссия</h2>
+    <p>Делать сложное простым, опасное — безопасным, дорогое — экономичным. Мы верим, что инженерная мысль способна улучшить жизнь каждого человека на планете и ежедневно подтверждаем это своими разработками.</p>
+    <p>Добро пожаловать в будущее, которое мы строим уже сегодня.</p>
+  </main>
+
+  <footer>© 2026 Goodman Industries</footer>
+</body>
+</html>
