@@ -13,7 +13,10 @@
     .top{display:flex;justify-content:space-between;align-items:center}
     .logo{font-size:1.2rem;font-weight:700;color:var(--glitch);letter-spacing:2px}
     main{flex:1;padding:2rem}
-    .container{max-width:900px;margin:auto}
+    .container{max-width:900px;margin:auto;display:flex;gap:2rem;flex-wrap:wrap}
+    .photo{flex-shrink:0}
+    .photo img{width:200px;height:200px;border:2px solid var(--accent);object-fit:cover;filter:grayscale(100%) contrast(150%)}
+    .data{flex:1;min-width:280px}
     h1{font-size:2rem;letter-spacing:3px;text-shadow:0 0 10px var(--glitch)}
     .label{color:var(--glitch);font-weight:700}
     .cursor{display:inline-block;width:10px;height:20px;background:var(--text);animation:blink 1s infinite}
@@ -23,7 +26,6 @@
     .back{margin-top:2rem;display:inline-block;color:var(--glitch);transition:.3s}
     .back:hover{color:var(--text)}
     footer{background:var(--surface);padding:1rem;text-align:center;font-size:.75rem;color:#555}
-    /* анимация «печати» */
     .type{overflow:hidden;white-space:nowrap;width:0;animation:type 2s steps(90,end) forwards}
     @keyframes type{to{width:100%}}
   </style>
@@ -38,34 +40,28 @@
 
   <main>
     <div class="container">
-      <h1><span class="glitch">ДОСЬЕ</span> // Натан Купитман <span class="cursor"></span></h1>
-
-      <p class="type">
-        <span class="label">ID:</span> K-01 <span class="label">АУРА:</span> 9870 ед.
-      </p>
-
-      <p class="type" style="animation-delay:.3s">
-        <span class="label">Должность:</span> Генеральный директор Goodman-MedTech,Министр Внутренних Дел Израиля.
-      </p>
-
-      <p class="type" style="animation-delay:.6s">
-        <span class="label">Год рождения:</span> 1985 <span class="label">Образование:</span> Университет по изготавлению смаженок имени Гудмана примудрого
-      </p>
-
-      <p class="type" style="animation-delay:.9s">
-        <span class="label">Ключевые достижения:</span>
-      </p>
-      <ul class="type" style="animation-delay:1.2s;list-style:square;padding-left:1.5rem">
-        <li>Создатель первого ИВЛ, синхронизированного с биополем пациента</li>
-        <li>42 патента в области медицинской техники</li>
-        <li>Forbes «30 под 30» (энергетика)</li>
-      </ul>
-
-      <div class="quote type" style="animation-delay:1.8s">
-        «Я не рождён, чтобы бояться. Я рождён сокрушать преграды на пути к вечной славе.»
+      <div class="photo">
+        <img src="../img/kupitman.jpg" alt="Натан Купитман">
       </div>
 
-      <a href="rating.html" class="back type" style="animation-delay:2.2s">[ЗАКРЫТЬ ДОСЬЕ]</a>
+      <div class="data">
+        <h1><span class="glitch">ДОСЬЕ</span> // Натан Купитман <span class="cursor"></span></h1>
+
+        <p class="type"><span class="label">ID:</span> K-01 <span class="label">АУРА:</span> 9870 ед.</p>
+        <p class="type" style="animation-delay:.3s"><span class="label">Должность:</span> Генеральный директор Goodman-MedTech, Министр Внутренних Дел Израиля.</p>
+        <p class="type" style="animation-delay:.6s"><span class="label">Год рождения:</span> 1985 <span class="label">Образование:</span> Университет по изготавлению смаженок имени Гудмана примудрого</p>
+
+        <p class="type" style="animation-delay:.9s"><span class="label">Ключевые достижения:</span></p>
+        <ul class="type" style="animation-delay:1.2s;list-style:square;padding-left:1.5rem">
+          <li>Создатель первого ИВЛ, синхронизированного с биополем пациента</li>
+          <li>42 патента в области медицинской техники</li>
+          <li>Forbes «30 под 30» (энергетика)</li>
+        </ul>
+
+        <div class="quote type" style="animation-delay:1.8s">«Я не рождён, чтобы бояться. Я рождён сокрушать преграды на пути к вечной славе.»</div>
+
+        <a href="rating.html" class="back type" style="animation-delay:2.2s">[ЗАКРЫТЬ ДОСЬЕ]</a>
+      </div>
     </div>
   </main>
 
