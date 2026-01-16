@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>// ДОСЬЕ: Марк Весна</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#ff0040;--bg:#000;--surface:#0a0a0a;--text:#00ff41;--glitch:#ff0040}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:'Roboto Mono',monospace;display:flex;flex-direction:column;min-height:100vh;line-height:1.6}
+    header{background:var(--surface);padding:1rem;border-bottom:1px solid var(--accent)}
+    .top{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:1.2rem;font-weight:700;color:var(--glitch);letter-spacing:2px}
+    main{flex:1;padding:2rem}
+    .container{max-width:900px;margin:auto}
+    h1{font-size:2rem;letter-spacing:3px;text-shadow:0 0 10px var(--glitch)}
+    .label{color:var(--glitch);font-weight:700}
+    .cursor{display:inline-block;width:10px;height:20px;background:var(--text);animation:blink 1s infinite}
+    @keyframes blink{50%{opacity:0}}
+    .glitch{font-weight:700;color:var(--glitch);text-transform:uppercase}
+    .quote{border-left:2px solid var(--accent);padding-left:1rem;margin:1.5rem 0;font-style:italic}
+    .back{margin-top:2rem;display:inline-block;color:var(--glitch);transition:.3s}
+    .back:hover{color:var(--text)}
+    footer{background:var(--surface);padding:1rem;text-align:center;font-size:.75rem;color:#555}
+    .type{overflow:hidden;white-space:nowrap;width:0;animation:type 2s steps(90,end) forwards}
+    @keyframes type{to{width:100%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="logo">// GOODMAN::TERMINAL</div>
+      <a href="rating.html" class="back">← BACK</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1><span class="glitch">ДОСЬЕ</span> // Марк Весна <span class="cursor"></span></h1>
+
+      <p class="type">
+        <span class="label">ID:</span> V-05 <span class="label">АУРА:</span> 8710 ед.
+      </p>
+
+      <p class="type" style="animation-delay:.3s">
+        <span class="label">Должность:</span> Руководитель направления Goodman-Cyber
+      </p>
+
+      <p class="type" style="animation-delay:.6s">
+        <span class="label">Год рождения:</span> 1992 <span class="label">Образование:</span> MSc, Кибернетика, КПИ
+      </p>
+
+      <p class="type" style="animation-delay:.9s">
+        <span class="label">Ключевые достижения:</span>
+      </p>
+      <ul class="type" style="animation-delay:1.2s;list-style:square;padding-left:1.5rem">
+        <li>Создатель квантового чипа «Аура-К» для защиты данных биополем</li>
+        <li>Разработал устойчивые к квантовым вычислениям алгоритмы шифрования</li>
+        <li>Обеспечил 99,999 % защищённость каналов для госструктур</li>
+        <li>Спикер Black Hat 2025: «Криптография будущего = криптография ауры»</li>
+        <li>37 патентов в области пост-квантовой криптографии</li>
+      </ul>
+
+      <div class="quote type" style="animation-delay:1.8s">
+        «Ключ — внутри тебя. Главное — не потерять его.»
+      </div>
+
+      <a href="rating.html" class="back type" style="animation-delay:2.2s">[ЗАКРЫТЬ ДОСЬЕ]</a>
+    </div>
+  </main>
+
+  <footer>// END OF FILE //</footer>
+</body>
+</html>
