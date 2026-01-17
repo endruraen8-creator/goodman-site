@@ -13,7 +13,10 @@
     .top{display:flex;justify-content:space-between;align-items:center}
     .logo{font-size:1.2rem;font-weight:700;color:var(--glitch);letter-spacing:2px}
     main{flex:1;padding:2rem}
-    .container{max-width:900px;margin:auto}
+    .container{max-width:900px;margin:auto;display:flex;gap:2rem;flex-wrap:wrap}
+    .photo{flex-shrink:0}
+    .photo img{width:200px;height:200px;border:2px solid var(--accent);object-fit:cover;filter:grayscale(100%) contrast(150%)}
+    .data{flex:1;min-width:280px}
     h1{font-size:2rem;letter-spacing:3px;text-shadow:0 0 10px var(--glitch)}
     .label{color:var(--glitch);font-weight:700}
     .cursor{display:inline-block;width:10px;height:20px;background:var(--text);animation:blink 1s infinite}
@@ -23,8 +26,17 @@
     .back{margin-top:2rem;display:inline-block;color:var(--glitch);transition:.3s}
     .back:hover{color:var(--text)}
     footer{background:var(--surface);padding:1rem;text-align:center;font-size:.75rem;color:#555}
-    .type{overflow:hidden;white-space:nowrap;width:0;animation:type 2s steps(90,end) forwards}
-    @keyframes type{to{width:100%}}
+    /* перенос длинных слов */
+    .type, .quote{word-break:break-word;overflow-wrap:break-word}
+    /* плавное появление вместо «печати» */
+    .type{opacity:0;animation:fadeIn .8s ease-out forwards}
+    .type:nth-child(2){animation-delay:.1s}
+    .type:nth-child(3){animation-delay:.2s}
+    .type:nth-child(4){animation-delay:.3s}
+    .type:nth-child(5){animation-delay:.4s}
+    .quote{animation-delay:.6s}
+    a.back{animation-delay:.8s}
+    @keyframes fadeIn{to{opacity:1}}
   </style>
 </head>
 <body>
@@ -37,36 +49,28 @@
 
   <main>
     <div class="container">
-      <h1><span class="glitch">ДОСЬЕ</span> // Максим Жадан <span class="cursor"></span></h1>
-
-      <p class="type">
-        <span class="label">ID:</span> Z-03 <span class="label">АУРА:</span> 9 210 ед.
-      </p>
-
-      <p class="type" style="animation-delay:.3s">
-        <span class="label">Должность:</span> Технический директор Goodman-Robotics
-      </p>
-
-      <p class="type" style="animation-delay:.6s">
-        <span class="label">Год рождения:</span> 1990 <span class="label">Образование:</span> MSc, Робототехника, МФТИ
-      </p>
-
-      <p class="type" style="animation-delay:.9s">
-        <span class="label">Ключевые достижения:</span>
-      </p>
-      <ul class="type" style="animation-delay:1.2s;list-style:square;padding-left:1.5rem">
-        <li>Создатель «Ауромобиля» — первого транспорта, заряжаемого энергетикой водителя</li>
-        <li>Удерживает мировой рекорд скорости для электро-автомобиля с био-интерфейсом: 412 км/ч</li>
-        <li>3D-печать роботизированных рук с адаптивным захватом, сертифицированных в 19 странах</li>
-        <li>Автор 28 патентов в области AMR/SCARA-систем</li>
-        <li>Лауреат премии IEEE «За прорыв в промышленной автоматике» (2025)</li>
-      </ul>
-
-      <div class="quote type" style="animation-delay:1.8s">
-        «Чем выше лес тем шкибиди ес ес.»
+      <div class="photo">
+        <img src="../img/zhadam-dossier.jpg" alt="Максим Жадан">
       </div>
 
-      <a href="rating.html" class="back type" style="animation-delay:2.2s">[ЗАКРЫТЬ ДОСЬЕ]</a>
+      <div class="data">
+        <h1><span class="glitch">ДОСЬЕ</span> // Максим Жадан <span class="cursor"></span></h1>
+
+        <p class="type"><span class="label">ID:</span> Z-03 <span class="label">АУРА:</span> 9210 ед.</p>
+        <p class="type"><span class="label">Должность:</span> Лидер Пиратов, Кличка "Бармолей"</p>
+        <p class="type"><span class="label">Год рождения:</span> 1990 <span class="label">Образование:</span> Национальный Университет Северной Кореи имени Великого Вождя Императора Премьер-Министра Диктатора Ким Черкашына</p>
+
+        <p class="type"><span class="label">Ключевые достижения:</span></p>
+        <ul class="type">
+          <li>Создатель рецепта смаженки со вкусом "Молочка Мамы Некита"</li>
+          <li>Удерживает мировой рекорд скорости перезарядки ствола: 412 патронов/с</li>
+          <li>Снес сотни цыганских деревень</li>
+        </ul>
+
+        <div class="quote type">«Чем выше лес, тем шкибиди ес ес.»</div>
+
+        <a href="rating.html" class="back type">[ЗАКРЫТЬ ДОСЬЕ]</a>
+      </div>
     </div>
   </main>
 
